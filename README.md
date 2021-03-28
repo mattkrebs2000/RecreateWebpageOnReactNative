@@ -5,4 +5,4 @@ Watch this video https://youtu.be/Is1q8Upa8_Q for further clarification.
 X-Large
 ![alt text][logo]
 
-[logo]: /Users/matt/Desktop/RecreateWebpageOnReactNative/PhoneView.pdf
+[logo]: https://github.com/mattkrebs2000/RecreateWebpageOnReactNative/blob/master/PhoneView.png
