@@ -1,4 +1,4 @@
-##Recreate a Webpage on React Native
+## Recreate a Webpage on React Native
 
 This repository contains an example of a webpage recreated on React Native and provides additional "webpage challenges" that can be used to practice on mobile. 
 
