@@ -10,8 +10,7 @@ import {
   ScrollView,
   contentContainerStyle,
 } from "react-native";
-import { ScaledSheet } from 'react-native-size-matters';
-
+import { ScaledSheet } from "react-native-size-matters";
 
 export default function App() {
   const image = {
@@ -37,98 +36,134 @@ export default function App() {
       <View style={styles.imagecontainer2}>
         <ImageBackground source={header} style={styles.image2}>
           <View style={styles.linkcenter}>
-          <ScrollView horizontal={true} 
-          showsHorizontalScrollIndicator={false}>
-            <Text style={styles.links}>Home</Text>
-            <Text style={styles.links}>About</Text>
-            <Text style={styles.links}>Products</Text>
-            <Text style={styles.links}>Services</Text>
-            <Text style={styles.links}>Design</Text>
-            <Text style={styles.links}>Contact</Text>
+            <ScrollView
+              horizontal={true}
+              showsHorizontalScrollIndicator={false}
+            >
+              <Text style={styles.links}>Home</Text>
+              <Text style={styles.links}>About</Text>
+              <Text style={styles.links}>Products</Text>
+              <Text style={styles.links}>Services</Text>
+              <Text style={styles.links}>Design</Text>
+              <Text style={styles.links}>Contact</Text>
             </ScrollView>
-            </View>
+          </View>
         </ImageBackground>
       </View>
       <ScrollView style={styles.text}>
         <View style={styles.innertext}>
-        <Text style={styles.heading}>
-        You may use this template in any manner you like. All I ask is that you leave the link back to my site at the bottom of the page.
-        </Text>
-        <Text style={styles.heading2}>
-       Template Notes
-        </Text>
-        <Text style={styles.text2}>
-        The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like. If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find "#mainpic h1" in style.css and modify it's "left" and "top" properties, this is also true for the h2 tag.
-        </Text>
-        <Text style={styles.heading2}>
-       More Information
-         </Text>
-         <Text style={styles.text2}>
-         I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.
-         </Text>
-         <Text style={styles.heading2}>
-         Template Notes
+          <Text style={styles.heading}>
+            You may use this template in any manner you like. All I ask is that
+            you leave the link back to my site at the bottom of the page.
           </Text>
+          <Text style={styles.heading2}>Template Notes</Text>
           <Text style={styles.text2}>
-          The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like. If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find "#mainpic h1" in style.css and modify it's "left" and "top" properties, this is also true for the h2 tag.
+            The main image can be changed by either replacing the current image
+            with another one of the same size (900x402), or using a new one of
+            what ever dimensions you'd like. If you choose the latter, you must
+            open up style.css and change the dimensions of #mainpic, as well as
+            the file name if that is different. If you would like to move the
+            heading around in the above image, find "#mainpic h1" in style.css
+            and modify it's "left" and "top" properties, this is also true for
+            the h2 tag.
           </Text>
-          <Text style={styles.heading2}>
-         More Information
-           </Text>
-           <Text style={styles.text2}>
-           I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.
-           </Text>
-           <Text style={styles.heading2}>
-       Template Notes
-        </Text>
-        <Text style={styles.text2}>
-        The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like. If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find "#mainpic h1" in style.css and modify it's "left" and "top" properties, this is also true for the h2 tag.
-        </Text>
-        <Text style={styles.heading2}>
-       More Information
-         </Text>
-         <Text style={styles.text2}>
-         I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.
-         </Text>
-         <Text style={styles.heading2}>
-         Template Notes
-          </Text>
+          <Text style={styles.heading2}>More Information</Text>
           <Text style={styles.text2}>
-          The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like. If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find "#mainpic h1" in style.css and modify it's "left" and "top" properties, this is also true for the h2 tag.
+            I decided to leave the content portion open for the templates users
+            to do as they wish with a blank canvas. I don't like to restrict my
+            users too much, and for this reason I leave the defining of any
+            content related styles to you.
           </Text>
-          <Text style={styles.heading2}>
-         More Information
-           </Text>
-           <Text style={styles.text2}>
-           I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.
-           </Text>
-           <Text style={styles.heading2}>
-       Template Notes
-        </Text>
-        <Text style={styles.text2}>
-        The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like. If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find "#mainpic h1" in style.css and modify it's "left" and "top" properties, this is also true for the h2 tag.
-        </Text>
-        <Text style={styles.heading2}>
-       More Information
-         </Text>
-         <Text style={styles.text2}>
-         I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.
-         </Text>
-         <Text style={styles.heading2}>
-         Template Notes
-          </Text>
+          <Text style={styles.heading2}>Template Notes</Text>
           <Text style={styles.text2}>
-          The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like. If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find "#mainpic h1" in style.css and modify it's "left" and "top" properties, this is also true for the h2 tag.
+            The main image can be changed by either replacing the current image
+            with another one of the same size (900x402), or using a new one of
+            what ever dimensions you'd like. If you choose the latter, you must
+            open up style.css and change the dimensions of #mainpic, as well as
+            the file name if that is different. If you would like to move the
+            heading around in the above image, find "#mainpic h1" in style.css
+            and modify it's "left" and "top" properties, this is also true for
+            the h2 tag.
           </Text>
-          <Text style={styles.heading2}>
-         More Information
-           </Text>
-           <Text style={styles.text2}>
-           I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.
-           </Text>
-          
-        
-        
+          <Text style={styles.heading2}>More Information</Text>
+          <Text style={styles.text2}>
+            I decided to leave the content portion open for the templates users
+            to do as they wish with a blank canvas. I don't like to restrict my
+            users too much, and for this reason I leave the defining of any
+            content related styles to you.
+          </Text>
+          <Text style={styles.heading2}>Template Notes</Text>
+          <Text style={styles.text2}>
+            The main image can be changed by either replacing the current image
+            with another one of the same size (900x402), or using a new one of
+            what ever dimensions you'd like. If you choose the latter, you must
+            open up style.css and change the dimensions of #mainpic, as well as
+            the file name if that is different. If you would like to move the
+            heading around in the above image, find "#mainpic h1" in style.css
+            and modify it's "left" and "top" properties, this is also true for
+            the h2 tag.
+          </Text>
+          <Text style={styles.heading2}>More Information</Text>
+          <Text style={styles.text2}>
+            I decided to leave the content portion open for the templates users
+            to do as they wish with a blank canvas. I don't like to restrict my
+            users too much, and for this reason I leave the defining of any
+            content related styles to you.
+          </Text>
+          <Text style={styles.heading2}>Template Notes</Text>
+          <Text style={styles.text2}>
+            The main image can be changed by either replacing the current image
+            with another one of the same size (900x402), or using a new one of
+            what ever dimensions you'd like. If you choose the latter, you must
+            open up style.css and change the dimensions of #mainpic, as well as
+            the file name if that is different. If you would like to move the
+            heading around in the above image, find "#mainpic h1" in style.css
+            and modify it's "left" and "top" properties, this is also true for
+            the h2 tag.
+          </Text>
+          <Text style={styles.heading2}>More Information</Text>
+          <Text style={styles.text2}>
+            I decided to leave the content portion open for the templates users
+            to do as they wish with a blank canvas. I don't like to restrict my
+            users too much, and for this reason I leave the defining of any
+            content related styles to you.
+          </Text>
+          <Text style={styles.heading2}>Template Notes</Text>
+          <Text style={styles.text2}>
+            The main image can be changed by either replacing the current image
+            with another one of the same size (900x402), or using a new one of
+            what ever dimensions you'd like. If you choose the latter, you must
+            open up style.css and change the dimensions of #mainpic, as well as
+            the file name if that is different. If you would like to move the
+            heading around in the above image, find "#mainpic h1" in style.css
+            and modify it's "left" and "top" properties, this is also true for
+            the h2 tag.
+          </Text>
+          <Text style={styles.heading2}>More Information</Text>
+          <Text style={styles.text2}>
+            I decided to leave the content portion open for the templates users
+            to do as they wish with a blank canvas. I don't like to restrict my
+            users too much, and for this reason I leave the defining of any
+            content related styles to you.
+          </Text>
+          <Text style={styles.heading2}>Template Notes</Text>
+          <Text style={styles.text2}>
+            The main image can be changed by either replacing the current image
+            with another one of the same size (900x402), or using a new one of
+            what ever dimensions you'd like. If you choose the latter, you must
+            open up style.css and change the dimensions of #mainpic, as well as
+            the file name if that is different. If you would like to move the
+            heading around in the above image, find "#mainpic h1" in style.css
+            and modify it's "left" and "top" properties, this is also true for
+            the h2 tag.
+          </Text>
+          <Text style={styles.heading2}>More Information</Text>
+          <Text style={styles.text2}>
+            I decided to leave the content portion open for the templates users
+            to do as they wish with a blank canvas. I don't like to restrict my
+            users too much, and for this reason I leave the defining of any
+            content related styles to you.
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -162,30 +197,26 @@ const styles = ScaledSheet.create({
     marginLeft: "5@s",
     marginRight: "5@s",
     height: "100%",
-   
-   
   },
   imagecontainer2: {
     alignItems: "center",
     flex: 0.1,
     width: "90%",
-    
   },
   text: {
-    flex: .8,
+    flex: 0.8,
     width: "90%",
     backgroundColor: "white",
   },
   innertext: {
-margin: "10@s",
+    margin: "10@s",
   },
   links: {
     color: "white",
     fontWeight: "bold",
     marginRight: "25@s",
     marginLeft: "15@s",
-    fontSize:"10@s",
-    
+    fontSize: "10@s",
   },
   toptext: {
     color: "white",
@@ -195,28 +226,27 @@ margin: "10@s",
     fontSize: "12@s",
   },
 
- heading2: {
+  heading2: {
     color: "black",
-    fontWeight:"700",
-   fontSize: "18@s",
+    fontWeight: "700",
+    fontSize: "18@s",
     marginTop: "20@s",
   },
 
   heading: {
     color: "black",
     fontWeight: "bold",
-   
-   marginBottom: "5@s",
-   fontSize: "18@s",
+
+    marginBottom: "5@s",
+    fontSize: "18@s",
   },
   text2: {
     color: "black",
-   fontSize: "15@s",
+    fontSize: "15@s",
   },
 
-  linkcenter:
-  {
-marginVertical:"4@s",
-height: "100%"
-  }
+  linkcenter: {
+    marginVertical: "4.5@s",
+    height: "100%",
+  },
 });
