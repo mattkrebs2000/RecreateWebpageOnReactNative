@@ -39,13 +39,24 @@ export default function App() {
             <ScrollView
               horizontal={true}
               showsHorizontalScrollIndicator={false}
-            >
+            ><View style={styles.linkcenter2}>
               <Text style={styles.links}>Home</Text>
+              </View>
+              <View style={styles.linkcenter2}>
               <Text style={styles.links}>About</Text>
+              </View>
+              <View style={styles.linkcenter2}>
               <Text style={styles.links}>Products</Text>
+              </View>
+              <View style={styles.linkcenter2}>
               <Text style={styles.links}>Services</Text>
+              </View>
+              <View style={styles.linkcenter2}>
               <Text style={styles.links}>Design</Text>
+              </View>
+              <View style={styles.linkcenter2}>
               <Text style={styles.links}>Contact</Text>
+              </View>
             </ScrollView>
           </View>
         </ImageBackground>
@@ -183,6 +194,8 @@ const styles = ScaledSheet.create({
     marginLeft: "5@s",
     marginRight: "5@s",
     height: "100%",
+    resizeMode: "stretch",
+             
   },
   imagecontainer: {
     justifyContent: "flex-start",
@@ -245,8 +258,15 @@ const styles = ScaledSheet.create({
     fontSize: "15@s",
   },
 
-  linkcenter: {
-    marginVertical: "4.5@s",
+  // linkcenter: {
+  //   marginVertical: "4.5@s",
+  //   height: "100%",
+  //   justifyContent: "center",
+  // },
+
+  linkcenter2: {
     height: "100%",
+    justifyContent: "center",
   },
+
 });
