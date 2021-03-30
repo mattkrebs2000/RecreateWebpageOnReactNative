@@ -8,7 +8,10 @@ import {
   SafeAreaView,
   Button,
   ScrollView,
+  contentContainerStyle,
 } from "react-native";
+import { ScaledSheet } from 'react-native-size-matters';
+
 
 export default function App() {
   const image = {
@@ -33,14 +36,17 @@ export default function App() {
       </View>
       <View style={styles.imagecontainer2}>
         <ImageBackground source={header} style={styles.image2}>
-          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <View style={styles.linkcenter}>
+          <ScrollView horizontal={true} 
+          showsHorizontalScrollIndicator={false}>
             <Text style={styles.links}>Home</Text>
             <Text style={styles.links}>About</Text>
             <Text style={styles.links}>Products</Text>
             <Text style={styles.links}>Services</Text>
             <Text style={styles.links}>Design</Text>
             <Text style={styles.links}>Contact</Text>
-          </ScrollView>
+            </ScrollView>
+            </View>
         </ImageBackground>
       </View>
       <ScrollView style={styles.text}>
@@ -72,17 +78,64 @@ export default function App() {
            <Text style={styles.text2}>
            I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.
            </Text>
+           <Text style={styles.heading2}>
+       Template Notes
+        </Text>
+        <Text style={styles.text2}>
+        The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like. If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find "#mainpic h1" in style.css and modify it's "left" and "top" properties, this is also true for the h2 tag.
+        </Text>
+        <Text style={styles.heading2}>
+       More Information
+         </Text>
+         <Text style={styles.text2}>
+         I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.
+         </Text>
+         <Text style={styles.heading2}>
+         Template Notes
+          </Text>
+          <Text style={styles.text2}>
+          The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like. If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find "#mainpic h1" in style.css and modify it's "left" and "top" properties, this is also true for the h2 tag.
+          </Text>
+          <Text style={styles.heading2}>
+         More Information
+           </Text>
+           <Text style={styles.text2}>
+           I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.
+           </Text>
+           <Text style={styles.heading2}>
+       Template Notes
+        </Text>
+        <Text style={styles.text2}>
+        The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like. If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find "#mainpic h1" in style.css and modify it's "left" and "top" properties, this is also true for the h2 tag.
+        </Text>
+        <Text style={styles.heading2}>
+       More Information
+         </Text>
+         <Text style={styles.text2}>
+         I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.
+         </Text>
+         <Text style={styles.heading2}>
+         Template Notes
+          </Text>
+          <Text style={styles.text2}>
+          The main image can be changed by either replacing the current image with another one of the same size (900x402), or using a new one of what ever dimensions you'd like. If you choose the latter, you must open up style.css and change the dimensions of #mainpic, as well as the file name if that is different. If you would like to move the heading around in the above image, find "#mainpic h1" in style.css and modify it's "left" and "top" properties, this is also true for the h2 tag.
+          </Text>
+          <Text style={styles.heading2}>
+         More Information
+           </Text>
+           <Text style={styles.text2}>
+           I decided to leave the content portion open for the templates users to do as they wish with a blank canvas. I don't like to restrict my users too much, and for this reason I leave the defining of any content related styles to you.
+           </Text>
           
         
         
         </View>
       </ScrollView>
-      <StatusBar style="auto" />
     </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#1e4297",
@@ -92,33 +145,31 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    marginLeft: 5,
-    marginRight: 5,
+    marginLeft: "5@s",
+    marginRight: "5@s",
     height: "100%",
   },
   imagecontainer: {
     justifyContent: "flex-start",
     alignItems: "center",
-    flex: 0.2,
+    flex: 0.4,
     width: "90%",
     backgroundColor: "green",
     marginTop: 0,
   },
   image2: {
     width: "100%",
-    marginLeft: 5,
-    marginRight: 5,
+    marginLeft: "5@s",
+    marginRight: "5@s",
     height: "100%",
-    justifyContent: "center",
-    alignItems: "center",
+   
+   
   },
   imagecontainer2: {
-    justifyContent: "flex-start",
     alignItems: "center",
-    flex: 0.08,
+    flex: 0.1,
     width: "90%",
-    backgroundColor: "green",
-    marginTop: 0,
+    
   },
   text: {
     flex: .8,
@@ -126,40 +177,46 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
   },
   innertext: {
-margin: 10,
+margin: "10@s",
   },
   links: {
     color: "white",
     fontWeight: "bold",
-    marginTop: 10,
-    marginBottom: 10,
-    marginRight: 25,
-    marginLeft: 15,
+    marginRight: "25@s",
+    marginLeft: "15@s",
+    fontSize:"10@s",
+    
   },
   toptext: {
     color: "white",
     fontWeight: "bold",
     marginLeft: "45%",
     marginTop: "10%",
+    fontSize: "12@s",
   },
 
  heading2: {
     color: "black",
     fontWeight:"700",
-   fontSize: 18,
-    marginTop: 20,
-  
+   fontSize: "18@s",
+    marginTop: "20@s",
   },
 
   heading: {
     color: "black",
     fontWeight: "bold",
    
-   marginBottom: 5,
-   fontSize: 18,
+   marginBottom: "5@s",
+   fontSize: "18@s",
   },
   text2: {
     color: "black",
-   fontSize: 15,
+   fontSize: "15@s",
   },
+
+  linkcenter:
+  {
+marginVertical:"4@s",
+height: "100%"
+  }
 });
